@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    height: 0px;;
+}
+
+.container {
+    width: 100%;
+}
+
+.menu {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+}
+
+.menu li {
+    font-size: 12px;
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+}
+
+#google-apps {
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+}
+
+#perfil {
+    border-radius: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.botao {
+    padding: 12px 15px;
+    box-shadow: 0px 0px 5px #e1e3e1;
+    border-radius: 20px;
+    width: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.botao input {
+    border: 0;
+    width: 100%;
+    font-size: 100%;
+    outline: none;
+}
+
+.botao #input-sec {
+    display: none;
+}
+
+.icons-button {
+    width: 22px;
+    height: 22px;
+}
+
+#search {
+    margin-right: 10px;
+}
+
+#mic {
+    margin-right: 10px;
+}
+
+.apps-recent {
+    max-width: 500px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apps {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.apps:hover {
+    background-color: #cccccc2d;
+}
+
+.apps img {
+    background-color: #ccc;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.apps p {
+    font-size: 12px;
+}
+
+.apps .mais {
+    background-color: #D3E3FD;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apps .mais div {
+    background-color: black;
+    width: 3px;
+    height: 15px;
+}
+
+#line-1 {
+    transform: rotate(90deg);
+    position:absolute;
+}
+
+footer {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.personalizar {
+    background-color: #D3E3FD;
+    box-shadow: 2px 0px 3px#ccc;
+    display: flex;
+    max-width: 158px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.personalizar p {
+    font-size: 12px;
+    margin: 0;
+}
+
+@media (max-width:600px) {
+    .botao {
+        max-width: 90%;
+    }
+
+    .botao #input-pri {
+        display: block;
+        font-size: 100%;
+    }
+
+    .botao #input-sec {
+        display: none;
+        font-size: 95%;
+    }
+
+    .personalizar {
+        padding: 0;
+    }
+
+    .personalizar p {
+        display: none;
+    }
+
+    .personalizar img {
+        padding: 5px;
+    }
+
+    #mic {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:395px) {
+    .botao #input-pri {
+        display: none;
+        font-size: 95%;
+    }
+
+    .botao #input-sec {
+        display: block;
+        font-size: 95%;
+    }
+}
